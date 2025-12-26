@@ -81,6 +81,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D8E4F2A1-3B5C-4D6E-8F9A-1B2C3D4E5F6A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6FCFF350-5DA6-4D75-9B52-A955C133C066</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>crwen</string>
@@ -327,6 +340,55 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>zd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Listing project directories...</string>
+				<key>script</key>
+				<string>./alfred-zed --dirs $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open project directory with Zed</string>
+				<key>title</key>
+				<string>Open project directory with Zed</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D8E4F2A1-3B5C-4D6E-8F9A-1B2C3D4E5F6A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
 				<string>ze</string>
@@ -416,9 +478,38 @@
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
+		<key>D8E4F2A1-3B5C-4D6E-8F9A-1B2C3D4E5F6A</key>
+		<dict>
+			<key>xpos</key>
+			<real>70</real>
+			<key>ypos</key>
+			<real>615</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>~/Projects</string>
+				<key>placeholder</key>
+				<string>One directory per line</string>
+				<key>required</key>
+				<true/>
+				<key>trimaliases</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Directories containing your projects (one per line, used by zd command)</string>
+			<key>label</key>
+			<string>Projects Directories</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>projects_directories</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>

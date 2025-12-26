@@ -60,4 +60,19 @@ You can download workflow file, or compile your own program.
 
 - `zf`: Search file and Open with Zed.
 - `zr`: Open recent projects. Data is provided by Zed sqlite file.
+- `zd`: Open project directories from configured folders. Configure directories in Alfred's workflow settings.
 - `ze`: Lookup extensions, nothing else. So you can remove it by yourself.
+
+## Configuration
+
+### Projects Directories (for `zd` command)
+
+1. Open Alfred Preferences
+2. Navigate to Workflows → Zed
+3. Click the `[x]` button in the top-right corner to open workflow configuration
+4. Set **Projects Directories** with your project folders (one per line), e.g.:
+   ```
+   ~/Projects/github.com/myorg
+   ~/Projects/github.com/other-org
+   ~/Work/clients
+   ```
